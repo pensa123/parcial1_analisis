@@ -1,0 +1,420 @@
+
+/*INICIO*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Reloj*/
+
+#clock {
+    font-family: Consolas, sans-serif;
+    font-size: 1.5em;
+    /* Centrar nuestro reloj*/
+    margin:auto;
+    text-align: center;
+    border-bottom: 2px solid #b2b7e4;
+    border-left: 2px solid #b2b7e4;
+    margin-top: -10 px;
+}
+
+/*Audio*/
+#reproductor{
+	width: 720px;
+	margin: 20px auto;
+	padding: 5px;
+	background: #999999;
+	border: 1px solid #666666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#barra{
+	position: relative;
+	float: left;
+	width: 600px;
+	height: 16px;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	background: #EEEEEE;
+} 
+#progreso{
+	position: absolute;
+	width: 0px;
+	height: 16px;
+	background: rgba(0,0,150,.2);
+}
+
+/*Letras*/
+.sub-t {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 12px;
+    color: #57737A;
+    text-transform: uppercase;
+}
+
+.i-se {
+    text-align: right;
+    font-size: 17px;
+    font-weight: 300;
+    width:100%;
+}
+
+    .i-se a {
+        text-decoration: none;
+        color: #424242;
+       
+    }
+
+    .i-se a:hover, .i-se a:focus , .i-se a:active {
+        text-decoration: none;
+        color: #424242;
+    }
+
+
+
+/*Login*/
+
+.panel-l {
+    margin: auto;
+    width: 50rem;
+    border-top: 6px solid rgba(161,136,127, 0.72);
+}
+
+.alerta-login {
+    width: 80%;
+}
+
+.margen-inp {
+    margin-bottom: 10px;
+}
+
+.margen-pass {
+    margin-top: 12px;
+    clear: both;
+    display: block;
+}
+
+.letraInicio {
+    color: #616161;
+    letter-spacing: 2px;
+    text-transform: none;
+    margin-bottom: 2.5rem;
+}
+
+/* Margen entre controles de formularios */
+.margen-form {
+    margin-bottom: 1rem;
+}
+/*Imagen*/
+.img-r {
+    width: 20%;
+    min-width: 15%;
+}
+
+/* Circulo Form */
+.circulo {
+    border: 8px solid #aea79f;
+    border-radius: 2px;
+    padding: 4rem;
+    margin: auto;
+}
+
+/*Tipo de letra*/
+
+.negrilla {
+    font-weight: 200;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.mayus {
+    text-transform: uppercase;
+}
+
+/*Justificacion de Texto 'DataGRID'*/
+.centro { /*Se puede utiliza para justificar al centro al ITEM, HEADER CSS-CLASS*/
+    text-align: center;
+}
+
+.izquierda { /*Se puede utiliza para justificar a la izquierda al ITEM, HEADER CSS-CLASS*/
+    text-align: left;
+}
+
+.derecha { /*Se puede utiliza para justificar a la derecha al ITEM, HEADER CSS-CLASS*/
+    text-align: right;
+}
+
+/*Alineaciones*/
+.centros { /*Se utiliza para centrar los tipos de dato la table, div ,etc.*/
+    margin: auto;
+}
+
+
+.tables {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+
+
+/*Botones*/
+/*Plantilla Boton*/
+.btn-origen {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 10px 40px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .btn-origen.disabled,
+    .btn-origen[disabled],
+    fieldset[disabled] .btn-origen {
+        cursor: not-allowed;
+        opacity: 0.60;
+        filter: alpha(opacity=60);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+a.btn-origen.disabled,
+fieldset[disabled] a.btn-origen {
+    pointer-events: none;
+}
+
+.btn-origen:active,
+.btn-origen.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/*Boton Agregar */
+.btn-agregar {
+    color: #ffffff;
+    background-color: #829399;
+}
+
+    .btn-agregar:focus,
+    .btn-agregar.focus {
+        color: #ffffff;
+        background-color: #9DB5B2;
+        border-color: #9DB5B2;
+    }
+
+    .btn-agregar:active,
+    .btn-agregar.active {
+        color: #ffffff;
+        background-color: #9DB5B2;
+        border-color: #9DB5B2;
+    }
+
+    .btn-agregar:hover {
+        color: #ffffff;
+        background-color: #9DB5B2;
+        border-color: #9DB5B2;
+    }
+
+/*Chekbox Button*/
+
+/*Forms*/
+.form-c {
+    display: block;
+    width: 100%;
+    min-width: 11rem;
+    height: 34px;
+    padding: 8px 6px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.7s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out 0.7s, box-shadow ease-in-out .15s;
+    -moz-transition: border-color ease-in-out 0.7s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out 0.7s, box-shadow ease-in-out .15s;
+}
+
+    .form-c:focus {
+        border-color: #69A297;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(165,162,151,.075), 0 0 8px rgba(165,162,151,0.75);
+        box-shadow: inset 0 1px 1px rgba(165,162,151,.075), 0 0 8px rgba(165,162,151,0.75);
+    }
+
+    .form-c::-moz-placeholder {
+        color: #aea79f;
+        opacity: 1;
+    }
+
+    .form-c:-ms-input-placeholder {
+        color: #aea79f;
+    }
+
+    .form-c::-webkit-input-placeholder {
+        color: #aea79f;
+    }
+
+    .form-c[disabled],
+    .form-c[readonly],
+    fieldset[disabled] .form-c {
+        background-color: #E3655B;
+        opacity: 1;
+    }
+
+    .form-c[disabled],
+    fieldset[disabled] .form-c {
+        cursor: not-allowed;
+    }
+
+textarea.form-c {
+    height: auto;
+}
+/*Margen*/
+.margen-su {
+    margin: 20px;
+}
+
+.borde {
+    border: 3px solid #83b8d1;
+}
+
+/*Inicio*/
+
+.inicio {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*HEADER*/
+
+body{
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.head {
+    width: 100%;
+    background-image: url("img/penta.png");
+}
+
+.navbars {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+    .navbars ul a {
+        text-decoration: none;
+        color: #424242;
+    }
+
+    .navbars ul {
+        text-align: center;
+    }
+
+        .navbars ul li {
+            display: inline-block;
+            padding: 1rem;
+            font-size: 1.67rem;
+            letter-spacing: 2px;
+        }
+
+            .navbars ul li:hover {
+                background-color: rgba(162,126,111,0.4);
+                cursor: pointer;
+            }
+
+            .navbars ul li:active {
+                background-color: rgba(162,126,111,0.4);
+                cursor: pointer;
+            }
+
+            .active {
+             background-color: rgba(162,126,111,0.4);
+            }
+
+
+
+.navbars-izquierda {
+    margin-left: 2rem;
+}
+
+.cabecera {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.iniciar-s {
+    text-align: right;
+}
+
+.letra-cabecera {
+    letter-spacing: 1rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #607D8B;
+    font-size: 5.8rem;
+    font-weight: 500;
+}
+
+#wd{
+	opacity:0.8;
+}
+
+.imgres{
+	width: 100% \9;
+}
+
+#static{
+	position: fixed;
+	
+}
+
+.imag{
+	width: 10rem;
+}
+
+.pie-pagina {
+	opacity: 0.8;
+    background-color: #000000;
+    height: auto;
+    /*display: none;*/
+    color: rgba(227, 237, 239, 0.76);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    -o-transition: display ease-in-out 0.7s, box-shadow ease-in-out .15s;
+}
+
+.margen-debajo {
+    margin-bottom: 5.7rem;
+}
+
+
+.img-res {
+    width: 85%;
+    height: 45rem;
+}
